@@ -46,7 +46,7 @@ awesome_cv_entries <- new_entry_formats(
       if(length(x) == 0) {
         "{}\\vspace{-4.0mm}"
       } else {
-        paste(x,
+        paste(c(x),
               collapse = "\break")
       }
     })
