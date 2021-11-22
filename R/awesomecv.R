@@ -46,8 +46,8 @@ awesome_cv_entries <- new_entry_formats(
       if(length(x) == 0) {
         "{}\\vspace{-4.0mm}"
       } else {
-        paste(c("HEEEYYY",x),
-              collapse = "\n")
+        paste(x,
+              collapse = "\break")
       }
     })
 
