@@ -42,19 +42,16 @@ awesome_cv_entries <- new_entry_formats(
     )
   },
   detailed = function(what, when, with, where, why){
-    why <- lapply(why, function(x) {
-      if(length(x) == 0) {
-        "{}\\vspace{-4.0mm}"
-      } else {
-        paste(c(x),
-              collapse = "\n")
-      }
-    })
-
-    paste(c(
-      "\\begin{cventries}",
-      glue_alt("\t\\cventry{<<what>>}{<<with>>}{<<where>>}{<<when>>}{<<why>>}"),
-      "\\end{cventries}"
-    ), collapse = "\n")
-  }
+  why <- lapply(why, function(x) {
+    if(length(x) == 0) {
+      "{}\\vspace{-4.0mm}"
+    } else {
+      paste(c(x),
+            collapse = "\n")
+    }
+  })
+  
+  paste0("**<span style='font-size:1em;'>", with, "</span>**", "\\hfill _", where,"_  \n",
+         what, "\\hfill _", when,"_  \n\n", why,"  \n\n")
+}
 )
