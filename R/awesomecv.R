@@ -44,7 +44,7 @@ awesome_cv_entries <- new_entry_formats(
   detailed = function(what, when, with, where, why){
   why <- lapply(why, function(x) {
     if(length(x) == 0) {
-      "{}\\vspace{-4.0mm}"
+      "\\vspace{-4.0mm}"
     } else {
       paste(c(x),
             collapse = "\n")
