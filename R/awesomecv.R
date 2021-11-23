@@ -53,7 +53,7 @@ awesome_cv_entries <- new_entry_formats(
 
     paste(c(
       "\\begin{cventries}",
-      glue_alt("\t\\cventry{<<what>>}{<<with>>}{<<where>>}{<<when>>}<<why>>"),
+      glue_alt("\t\\cventry{<<what>>}{<<with>>}{<<where>>}{<<when>>}{<<why>>}"),
       "\\end{cventries}"
     ), collapse = "\n")
   }
