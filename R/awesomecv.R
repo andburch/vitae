@@ -53,7 +53,7 @@ awesome_cv_entries <- new_entry_formats(
 
     paste(c(
       "\\begin{cventries}",
-      glue_alt("\t\\cventry{<<what>>}{<<with>>}{<<where>>}{<<when>>}{<<why>>}") %>% str_replace_all("AT Burchill", "\\textcolor{awesome}{\\\\underline{AT Burchill}}"),
+      glue_alt("\t\\cventry{<<what>>}{<<with>>}{<<where>>}{<<when>>}{<<why>>}") %>% str_replace_all("AT Burchill", "\\\textcolor{awesome}{\\\\underline{AT Burchill}}"),
       "\\end{cventries}"
     ), collapse = "\n")
   }
